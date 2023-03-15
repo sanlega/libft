@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 17:12:46 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/15 16:58:12 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/03/15 17:30:57 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,13 +22,15 @@
 // 	return(n);
 // }
 
-static size_t	ft_intlen(int n)
+static size_t	ft_intlen(int n, int sign)
 {
 	size_t	len;
 
 	len = 0;
 	if (n == 0)
 		return (1);
+	if (sign == -1)
+		++len;
 	while (n > 0)
 	{
 		len++;
@@ -46,14 +48,12 @@ char	*ft_itoa(int n)
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
 	sign = 1;
-	len = 0;
 	if (n < 0)
 	{
 		sign = -1;
 		n = -n;
-		len++;
 	}
-	len += ft_intlen(n);
+	len = ft_intlen(n, sign);
 	str = (char *)malloc(sizeof(char) * (len + 1));
 	if (!str)
 		return (NULL);
