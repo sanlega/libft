@@ -6,7 +6,7 @@
 #    By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/07 20:28:28 by slegaris          #+#    #+#              #
-#    Updated: 2023/03/15 15:46:32 by slegaris         ###   ########.fr        #
+#    Updated: 2023/03/23 19:23:38 by slegaris         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,6 +52,10 @@ SRC =	ft_strlen.c\
 		ft_strjoin.c\
 		ft_strtrim.c\
 		ft_itoa.c\
+		ft_strmapi.c\
+		ft_striteri.c\
+		ft_strlen.c\
+		ft_split.c\
 
 OBJ = $(SRC:.c=.o)
 

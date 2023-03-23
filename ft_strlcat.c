@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 15:37:23 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/09 17:03:03 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/03/21 16:14:49 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	size_t	c;
 	size_t	d;
 
+	if (!dstsize && !dst)
+		return (0);
 	if (dstsize <= ft_strlen(dst))
 		return (dstsize + ft_strlen(src));
 	c = ft_strlen(dst);

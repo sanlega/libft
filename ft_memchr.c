@@ -6,7 +6,7 @@
 /*   By: slegaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/12 13:44:39 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/12 19:05:45 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/03/21 17:56:36 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	while (n > 0)
 	{
 		if (*p == (unsigned char)c)
-		{
 			return ((void *)p);
-		}
 		p++;
 		n--;
 	}

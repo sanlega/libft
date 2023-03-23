@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 13:55:36 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/12 23:23:59 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/03/23 21:15:07 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		len = ft_strlen(s);
 	dest = (char *)malloc((len + 1) * sizeof(char));
 	if (!dest)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (i < len && s[start + i] != '\0')
 	{
