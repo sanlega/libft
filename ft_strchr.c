@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 16:54:30 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/12 20:01:30 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/03/24 14:47:52 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ char	*ft_strchr(const char *s, int c)
 		return (&z[i]);
 	return (NULL);
 }
-//char	*ft_strchr(const char *s, int c)
+// char	*ft_strchr(const char *s, int c)
 // {
 // 	return (ft_memchr(s, c, ft_strlen(s) + 1));
 // }
@@ -42,6 +42,6 @@ char	*ft_strchr(const char *s, int c)
 // 	int c = 's';
 //
 // 	printf("%s\n", ft_strchr(s, c));
-// 	printf("%s\n", strchr("teste", 'e'));
+// 	printf("%s\n", strchr(s, c));
 // 	return 0;
 // }

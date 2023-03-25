@@ -6,7 +6,7 @@
 /*   By: slegaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/23 15:50:11 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/23 21:12:00 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/03/24 18:10:49 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ static void	flyingfree(char **s)
 	int	i;
 
 	i = 0;
-	while (!s[i])
+	while (s[i])
 	{
 		free(s[i]);
 		i++;
@@ -96,22 +96,15 @@ char	**ft_split(char const *s, char c)
 //
 // int main(void)
 // {
-//     char **result;
-//     int i;
+// 	char **result;
+// 	int i;
 //
-//     result = ft_split("Hello, how are you?", ' ');
-//
-//     for (i = 0; result[i] != NULL; i++)
-//     {
-//         printf("Word %d: %s\n", i + 1, result[i]);
-//     }
-//
-//     // Free memory
-//     for (i = 0; result[i] != NULL; i++)
-//     {
-//         free(result[i]);
-//     }
-//     free(result);
-//
-//     return (0);
+// 	result = ft_split("Hello, how are you?", ' ');
+// 	for (i = 0; result[i] != NULL; i++)
+// 		printf("Word %d: %s\n", i + 1, result[i]);
+// 	for (i = 0; result[i] != NULL; i++)
+// 		free(result[i]);
+// 	// free(result);
+// 	system("leaks a.out");
+// 	return (0);
 // }

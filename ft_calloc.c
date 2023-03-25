@@ -6,7 +6,7 @@
 /*   By: slegaris <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/11 21:55:56 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/11 22:19:37 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/03/25 00:21:24 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 
 	ptr = malloc(count * size);
-	if (ptr == NULL)
+	if (!ptr)
 		return (NULL);
 	ft_bzero(ptr, count * size);
 	return (ptr);

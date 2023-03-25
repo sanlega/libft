@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 13:55:36 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/23 21:15:07 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/03/24 18:07:36 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	unsigned int	i;
 
 	if (!s)
-		return (0);
-	if (start > ft_strlen(s))
+		return (NULL);
+	if (start >= ft_strlen(s))
 		len = 0;
-	if (len > ft_strlen(s))
-		len = ft_strlen(s);
+	else if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
 	dest = (char *)malloc((len + 1) * sizeof(char));
 	if (!dest)
 		return (NULL);
@@ -37,12 +37,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dest[i] = '\0';
 	return (dest);
 }
-/*
-int	main(void)
-{
-	char *bro = ft_substr("abcdefg", 3, 4);
-	printf("%s\n", bro);
-	free(bro);
-	system("leaks a.out");
-	return (0);
-}*/
+// int	main(void)
+// {
+// 	char *bro = ft_substr("", 3, 4);
+// 	printf("%s\n", bro);
+// 	// free(bro);
+// 	// system("leaks a.out");
+// 	return (0);
+// }
