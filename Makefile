@@ -6,7 +6,7 @@
 #    By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 19:41:29 by slegaris          #+#    #+#              #
-#    Updated: 2023/03/30 01:28:27 by slegaris         ###   ########.fr        #
+#    Updated: 2023/03/30 17:06:02 by slegaris         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -62,10 +62,10 @@ BSOURCES = ft_lstnew_bonus.c\
 	   ft_lstsize_bonus.c\
 	   ft_lstlast_bonus.c\
 	   ft_lstadd_back_bonus.c\
-	   # ft_lstdelone_bonus.c\
-	   # ft_lstclear_bonus.c\
-	   # ft_lstiter_bonus.c\
-	   # ft_lstmap_bonus.c\
+	   ft_lstdelone_bonus.c\
+	   ft_lstclear_bonus.c\
+	   ft_lstiter_bonus.c\
+	   ft_lstmap_bonus.c\
 
 OBJ = $(SRC:.c=.o)
 BOBJECTS = $(BSOURCES:.c=.o)
