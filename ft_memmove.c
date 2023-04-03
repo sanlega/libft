@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 23:30:37 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/12 20:02:28 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/04/03 17:54:53 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 // {
 // 	char *dst = " ";
 //
+// 	printf("%s\n", ft_memmove((char *)dst, "abcdefg", 4));
 // 	printf("%s\n", memmove((char *)dst, "abcdefg", 4));
 // 	return 0;
 // }

@@ -6,21 +6,14 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 17:12:46 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/15 17:30:57 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/04/03 17:49:08 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <stdint.h>
 #include <stdlib.h>
 //#include <stdio.h>
 #include "libft.h"
-
-// static int	min(long int n)
-// {
-
-// 	return(n);
-// }
 
 static size_t	ft_intlen(int n, int sign)
 {
