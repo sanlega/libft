@@ -54,9 +54,8 @@ Welcome to the Libft repository! This custom library is my implementation of sev
 
 
 ## Usage :hammer_and_wrench:
-1. Clone this repository. 
-2. Run `make` to compile the library. 
-3. Include `libft.h` in your project to use the library functions.
+1. Run `make` to compile the library. 
+2. Include `libft.h` in the project to use the library functions.
 ## Functions :gear:
 
 This custom library includes the following functions: 
