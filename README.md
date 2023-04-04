@@ -4,7 +4,7 @@ Welcome to the Libft repository! This custom library is my implementation of sev
 ## Contents :file_folder:
 
 ```
-
+/Libft
 .
 ├── Makefile
 ├── ft_atoi.c
