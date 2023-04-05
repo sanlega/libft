@@ -16,8 +16,9 @@
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
-	const unsigned char	*p = s;
-
+	const unsigned char	*p;
+	
+	p = s;
 	while (n > 0)
 	{
 		if (*p == (unsigned char)c)
