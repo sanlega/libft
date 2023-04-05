@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 21:22:46 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/21 15:55:16 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/04/05 16:07:41 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-/*
-int	main(void)
-{
-	ft_putendl_fd("hoola", 1);
-	return (0);
-}*/
+//
+// int	main(void)
+// {
+// 	ft_putendl_fd("hoola", 1);
+// 	return (0);
+// }

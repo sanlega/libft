@@ -6,7 +6,7 @@
 #    By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 19:41:29 by slegaris          #+#    #+#              #
-#    Updated: 2023/03/30 19:12:12 by slegaris         ###   ########.fr        #
+#    Updated: 2023/04/05 16:08:45 by slegaris         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,11 +77,10 @@ $(NAME): $(OBJ) $(INCLUDE)
 	$(LIB) $(NAME) $(OBJ)
 
 bonus: $(OBJ) $(BOBJECTS)
-	$(AR) -r $(NAME) $?
 
 %.o: %.c
 	$(CC) $(CCFLAGS) -c -o $@ $<
-
+	$(AR) -r $(NAME) $?
 clean:
 	$(RM) $(OBJ) $(BOBJECTS)
 
