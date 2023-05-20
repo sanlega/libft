@@ -1,4 +1,4 @@
-# Libft :books: :computer:
+# Libft :books: :computer:  [![slegaris's 42 Libft Score](https://badge42.vercel.app/api/v2/cle3f3fm900060fjx7kw7tghw/project/3017721)](https://github.com/JaeSeoKim/badge42)
 
 Welcome to the Libft repository! This custom library is my implementation of several standard C library functions, as well as some additional ones. This project is part of the 42 Madrid cursus. :rocket: :tada:
 ## Contents :file_folder:
