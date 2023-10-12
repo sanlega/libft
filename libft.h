@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 00:09:11 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/30 19:12:27 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/10/12 17:11:29 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdarg.h>
+# include <limits.h>
 
 typedef struct s_list
 {
@@ -26,7 +28,6 @@ void				ft_putchar_fd(char c, int fd);
 void				ft_putstr_fd(char *s, int fd);
 void				ft_putendl_fd(char *s, int fd);
 void				ft_putnbr_fd(int n, int fd);
-void				ft_striteri(char *s, void (*f)(unsigned int, char*));
 void				*ft_memset(void *b, int c, size_t len);
 void				*ft_memcpy(void *dst, const void *src, size_t n);
 void				*ft_memccpy(void *dst, const void *src, int c, size_t n);
@@ -65,5 +66,14 @@ void				ft_lstadd_back(t_list **lst, t_list *new);
 void				ft_lstdelone(t_list *lst, void (*del)(void*));
 void				ft_lstclear(t_list **lst, void (*del)(void*));
 void				ft_lstiter(t_list *lst, void (*f)(void *));
+int					ft_putchar_p(char c);
+int					ft_putstr_p(char *str);
+int					ft_putnbrhex_minus_p(int n);
+int					ft_putnbrhex_mayus_p(int n);
+int					ft_putnbr_p(int n);
+int					ft_putnbr_unsg_p(unsigned int n);
+int					ft_putptr_p(void *ptr);
+int					ft_printf(char const *format, ...);
+size_t				ft_intlen(int n, int sign);
 
 #endif

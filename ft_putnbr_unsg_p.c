@@ -1,30 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_putnbr_unsg_p.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: slegaris <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/20 16:40:20 by slegaris          #+#    #+#             */
-/*   Updated: 2023/03/21 16:02:48 by slegaris         ###   ########.fr       */
+/*   Created: 2023/05/23 02:22:52 by slegaris          #+#    #+#             */
+/*   Updated: 2023/06/26 19:03:58 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+int	ft_putnbr_unsg_p(unsigned int n)
 {
-	size_t	i;
-	size_t	len;
+	int	count;
 
-	if (!s)
-		return ;
-	i = 0;
-	len = ft_strlen(s);
-	while (s[i])
+	count = 0;
+	if (n > 9)
 	{
-		f(i, &s[i]);
-		i++;
+		count += ft_putnbr_unsg_p(n / 10);
+		count += ft_putnbr_unsg_p(n % 10);
 	}
+	else
+		count += ft_putchar_p(n + '0');
+	return (count);
 }

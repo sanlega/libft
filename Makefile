@@ -6,11 +6,11 @@
 #    By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 19:41:29 by slegaris          #+#    #+#              #
-#    Updated: 2023/04/05 16:08:45 by slegaris         ###   ########.fr        #
+#    Updated: 2023/10/12 17:22:34 by slegaris         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-LIB = ar rcs
+ARFLAGS = -rcs
 
 RM = rm -f
 
@@ -53,42 +53,43 @@ SRC =	ft_strlen.c\
 	ft_strtrim.c\
 	ft_itoa.c\
 	ft_strmapi.c\
-	ft_striteri.c\
-	ft_strlen.c\
 	ft_split.c\
-
-BSOURCES = ft_lstnew_bonus.c\
-	   ft_lstadd_front_bonus.c\
-	   ft_lstsize_bonus.c\
-	   ft_lstlast_bonus.c\
-	   ft_lstadd_back_bonus.c\
-	   ft_lstdelone_bonus.c\
-	   ft_lstclear_bonus.c\
-	   ft_lstiter_bonus.c\
+	ft_countnbr_p.c\
+	ft_printf.c\
+	ft_putchar_p.c\
+	ft_putnbr_p.c\
+	ft_putnbr_unsg_p.c\
+	ft_putnbrhex_mayus_p.c\
+	ft_putnbrhex_minus_p.c\
+	ft_putptr_p.c\
+	ft_putstr_p.c\
+	ft_lstsize.c\
+	ft_lstnew.c\
+	ft_lstlast.c\
+	ft_lstiter.c\
+	ft_lstdelone.c\
+	ft_lstclear.c\
+	ft_lstadd_front.c\
+	ft_lstadd_back.c\
+	ft_intlen.c\
 
 OBJ = $(SRC:.c=.o)
-BOBJECTS = $(BSOURCES:.c=.o)
 
 INCLUDE = libft.h
 
 all: $(NAME)
 
 $(NAME): $(OBJ) $(INCLUDE)
-	$(LIB) $(NAME) $(OBJ)
-
-bonus: $(OBJ) $(BOBJECTS)
+	@ $(AR) $(ARFLAGS) $(NAME) $(OBJ)
 
 %.o: %.c
-	$(CC) $(CCFLAGS) -c -o $@ $<
-	$(AR) -r $(NAME) $?
+	@ $(CC) $(CCFLAGS) -c -o $@ $<
 clean:
-	$(RM) $(OBJ) $(BOBJECTS)
+	$(RM) $(OBJ)
 
 fclean: clean
-	$(RM) $(NAME)
+	@ $(RM) $(NAME)
 
 re: fclean all
 
-rebonus: fclean bonus
-
-.PHONY: all bonus clean fclean re
+.PHONY: all clean fclean re
