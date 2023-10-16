@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 00:09:11 by slegaris          #+#    #+#             */
-/*   Updated: 2023/10/12 17:11:29 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/10/16 21:06:02 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,5 +75,6 @@ int					ft_putnbr_unsg_p(unsigned int n);
 int					ft_putptr_p(void *ptr);
 int					ft_printf(char const *format, ...);
 size_t				ft_intlen(int n, int sign);
+int					ft_isnumber(char *str);
 
 #endif

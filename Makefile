@@ -6,7 +6,7 @@
 #    By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 19:41:29 by slegaris          #+#    #+#              #
-#    Updated: 2023/10/12 17:22:34 by slegaris         ###   ########.fr        #
+#    Updated: 2023/10/16 21:04:06 by slegaris         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,6 +72,7 @@ SRC =	ft_strlen.c\
 	ft_lstadd_front.c\
 	ft_lstadd_back.c\
 	ft_intlen.c\
+	ft_isnumber.c\
 
 OBJ = $(SRC:.c=.o)
 

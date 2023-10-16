@@ -66,6 +66,11 @@ This custom library includes the following functions:
 - String manipulation (additional): `ft_substr`, `ft_strjoin`, `ft_strtrim`, `ft_split`, `ft_strmapi`, `ft_striteri` 
 - File descriptor manipulation: `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd` 
 - Bonus linked list functions: `ft_lstnew`, `ft_lstadd_front`, `ft_lstsize`, `ft_lstlast`, `ft_lstadd_back`, `ft_lstdelone`, `ft_lstclear`, `ft_lstiter`, `ft_lstmap`
+
+
+### Aditional functions:
+I added some useful functions to the library after the first commits. For example a Printf implementation i've made.
+
 ## Disclaimer :warning:
 
 Please note that this is *my* implementation of the Libft functions. I have uploaded this project to store my work and to share it with my fellow students for educational purposes. This is not an official solution or an endorsement of any kind.
