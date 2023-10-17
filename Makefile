@@ -6,7 +6,7 @@
 #    By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/27 19:41:29 by slegaris          #+#    #+#              #
-#    Updated: 2023/10/16 21:04:06 by slegaris         ###   ########.fr        #
+#    Updated: 2023/10/17 23:39:15 by slegaris         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,6 +34,7 @@ SRC =	ft_strlen.c\
 	ft_toupper.c\
 	ft_tolower.c\
 	ft_atoi.c\
+	ft_atol.c\
 	ft_strncmp.c\
 	ft_strchr.c\
 	ft_strchr.c\
@@ -73,6 +74,7 @@ SRC =	ft_strlen.c\
 	ft_lstadd_back.c\
 	ft_intlen.c\
 	ft_isnumber.c\
+	ptr_to_hex.c\
 
 OBJ = $(SRC:.c=.o)
 
