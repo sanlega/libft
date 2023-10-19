@@ -6,7 +6,7 @@
 /*   By: slegaris <slegaris@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/09 00:09:11 by slegaris          #+#    #+#             */
-/*   Updated: 2023/10/17 23:39:31 by slegaris         ###   ########.fr       */
+/*   Updated: 2023/10/19 07:06:35 by slegaris         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,6 @@ int					ft_putptr_p(void *ptr);
 int					ft_printf(char const *format, ...);
 size_t				ft_intlen(int n, int sign);
 int					ft_isnumber(char *str);
-void			ptr_to_hex(void *ptr, char *str);
+void				ptr_to_hex(void *ptr, char *str);
 
 #endif
